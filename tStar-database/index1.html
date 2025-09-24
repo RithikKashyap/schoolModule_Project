@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@6.0.0/dist/ionic/ionic.esm.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@6.0.0/css/ionic.bundle.css">
+    <style>
+        /* Custom CSS */
+        ion-header {
+            --background: #222;
+            --color: #fff;
+        }
+
+        ion-content {
+            --background: #f8f9fa;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('https://via.placeholder.com/1920x500') no-repeat center center / cover;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+
+        .section-title {
+            margin: 40px 0 20px;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        footer a {
+            color: #ff9900;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        ion-button {
+            --background: #007bff;
+            --background-hover: #0056b3;
+            --border-radius: 5px;
+            font-weight: bold;
+        }
+
+        ion-item {
+            --background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ion-app>
+        <!-- Navigation Bar -->
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>School Logo</ion-title>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content>
+
+            <!-- Hero Section -->
+            <section class="hero">
+                <h1>Welcome to Our School</h1>
+                <p>Empowering the future with knowledge and values</p>
+                <ion-button href="#admissions">Admissions</ion-button>
+            </section>
+
+            <!-- About Us Section -->
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-title>About Us</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac nisi a metus tempor venenatis.
+                    Quisque id turpis nec erat blandit bibendum.
+                </ion-card-content>
+            </ion-card>
+
+            <!-- Academics Section -->
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-title>Academics</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="4">
+                                <h4>Primary Education</h4>
+                                <p>Foundational learning for young minds.</p>
+                            </ion-col>
+                            <ion-col size="4">
+                                <h4>Secondary Education</h4>
+                                <p>Expanding horizons and deepening knowledge.</p>
+                            </ion-col>
+                            <ion-col size="4">
+                                <h4>Senior Secondary</h4>
+                                <p>Preparing for a successful future.</p>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card-content>
+            </ion-card>
+
+            <!-- Gallery Section -->
+            <section>
+                <h2 class="section-title">Gallery</h2>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size="4">
+                            <img src="https://via.placeholder.com/300x200" alt="Gallery Image">
+                        </ion-col>
+                        <ion-col size="4">
+                            <img src="https://via.placeholder.com/300x200" alt="Gallery Image">
+                        </ion-col>
+                        <ion-col size="4">
+                            <img src="https://via.placeholder.com/300x200" alt="Gallery Image">
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </section>
+
+            <!-- Contact Us Section -->
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-title>Contact Us</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                    <ion-item>
+                        <ion-label position="stacked">Name</ion-label>
+                        <ion-input type="text"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label position="stacked">Email</ion-label>
+                        <ion-input type="email"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label position="stacked">Message</ion-label>
+                        <ion-textarea rows="4"></ion-textarea>
+                    </ion-item>
+                    <ion-button expand="block">Send</ion-button>
+                </ion-card-content>
+            </ion-card>
+
+        </ion-content>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 School Name. All rights reserved. <a href="#">Privacy Policy</a></p>
+        </footer>
+
+    </ion-app>
+
+</body>
+
+</html>
